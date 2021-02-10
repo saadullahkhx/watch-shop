@@ -1,0 +1,13 @@
+[1124/193718.184:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1126/100142.754:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1126/115827.596:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d82bc284-6d91-4d9d-97cc-e5b161325ab0: The system cannot find the path specified. (0x3)
+[1126/191832.664:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1127/101326.270:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1130/204054.581:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1203/131225.517:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1203/131225.519:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1203/131225.519:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1203/132113.321:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1203/193728.949:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1205/211932.771:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1207/103905.729:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
