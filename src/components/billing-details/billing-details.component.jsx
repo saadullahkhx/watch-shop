@@ -109,7 +109,7 @@ const BillingDetails = (props) => {
               required
             />
           </Form.Group>
-          <Form.Group controlId='formBasicAddress'>
+          <Form.Group controlId='formBasicOptionalAddress'>
             <Form.Label>Street (Optional)</Form.Label>
             <Form.Control
               name='optionalAddress'
