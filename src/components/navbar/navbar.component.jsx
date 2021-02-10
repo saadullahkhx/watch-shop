@@ -43,7 +43,7 @@ const Navbar = () => {
         </SocialIcons>
       </MainNav>
       <BurgerIcon onClick={() => showMenu()} />
-      {mobileMenu ? <NavbarMobile /> : null}
+      {mobileMenu ? <NavbarMobile setMobileMenu={setMobileMenu} /> : null}
     </NavbarContainer>
   );
 };
