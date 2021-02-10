@@ -4,9 +4,10 @@ import Button from 'react-bootstrap/Button';
 import { NotificationManager } from 'react-notifications';
 import { addItemToCart } from '../../redux/cart/cart.actions';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ItemOverview = (props) => {
-  const { item, addItemToCart } = props;
+  const { item, addItemToCart, history } = props;
   const handleClick = () => {
     addItemToCart(item);
     NotificationManager.success('Added To Cart', 'Success!', 1000);
@@ -31,7 +32,9 @@ const ItemOverview = (props) => {
             <Button variant='dark' onClick={() => handleClick()}>
               ADD TO CART
             </Button>
-            <Button variant='outline-dark'>VIEW CART</Button>
+            <Link to='/cart'>
+              <Button variant='outline-dark'>VIEW CART</Button>
+            </Link>
           </div>
         </div>
       </div>

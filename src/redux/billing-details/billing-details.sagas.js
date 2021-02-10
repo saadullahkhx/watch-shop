@@ -27,6 +27,10 @@ export function* onPlaceOrderSuccess() {
   );
 }
 
+export function* onPlaceOrderFailure() {
+  yield NotificationManager.error('Error placing order', 'Error', 1000);
+}
+
 export function* watchPlaceOrderStart() {
   yield takeLatest(billingDetailsTypes.PLACE_ORDER_START, onPlaceOrderStart);
 }
@@ -38,6 +42,17 @@ export function* watchPlaceOrderSuccess() {
   );
 }
 
+export function* watchPlaceOrderFailure() {
+  yield takeLatest(
+    billingDetailsTypes.PLACE_ORDER_FAILURE,
+    onPlaceOrderFailure
+  );
+}
+
 export function* billingDetailsSagas() {
-  yield all([call(watchPlaceOrderStart), call(watchPlaceOrderSuccess)]);
+  yield all([
+    call(watchPlaceOrderStart),
+    call(watchPlaceOrderSuccess),
+    call(watchPlaceOrderFailure),
+  ]);
 }

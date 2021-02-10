@@ -90,7 +90,7 @@ const BillingDetails = (props) => {
             <Form.Label>Contact Number*</Form.Label>
             <Form.Control
               name='contactNumber'
-              type='text'
+              type='number'
               placeholder=''
               required
               value={contactNumber}
@@ -105,8 +105,12 @@ const BillingDetails = (props) => {
               placeholder='House number and street name'
               value={address}
               onChange={(event) => handleChange(event)}
+              minLength='6'
               required
             />
+          </Form.Group>
+          <Form.Group controlId='formBasicAddress'>
+            <Form.Label>Street (Optional)</Form.Label>
             <Form.Control
               name='optionalAddress'
               type='text'
