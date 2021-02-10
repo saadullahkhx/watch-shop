@@ -1,6 +1,4 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import TopHeader from './components/top-header/top-header.component';
 import Navbar from './components/navbar/navbar.component';
 import React, { useEffect } from 'react';
