@@ -4,6 +4,7 @@ import {
   placeOrderSuccess,
   placeOrderFailure,
 } from './billing-details.actions';
+import { NotificationManager } from 'react-notifications';
 
 import { firestore } from '../../firebase/firebase';
 
@@ -19,7 +20,11 @@ export function* onPlaceOrderStart({ payload }) {
 }
 
 export function* onPlaceOrderSuccess() {
-  yield alert('Order placed successfully!');
+  yield NotificationManager.success(
+    'Order placed successfully!',
+    'Success!',
+    1000
+  );
 }
 
 export function* watchPlaceOrderStart() {
