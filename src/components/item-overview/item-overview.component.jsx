@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const ItemOverview = (props) => {
-  const { item, addItemToCart, history } = props;
+  const { item, addItemToCart } = props;
   const handleClick = () => {
     addItemToCart(item);
     NotificationManager.success('Added To Cart', 'Success!', 1000);
